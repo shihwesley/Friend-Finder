@@ -1,0 +1,10 @@
+DROP DATABASE IF EXISTS todoDB;
+CREATE database todoDB;
+
+USE todoDB;
+
+CREATE TABLE todos (
+    id INTEGER(10) AUTO_INCREMENT PRIMARY KEY,
+    text VARCHAR(25) NOT NULL,
+    completed BOOLEAN DEFAULT false
+);
